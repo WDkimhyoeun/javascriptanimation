@@ -7,46 +7,30 @@
     <link rel="stylesheet" href="style/slider.css">
 </head>
 <body>
-    <div id="slider">
+    <div class="slider">
         <div class="slider__item">
-            <h1>1</h1>
+            <p>A FREE RESPONSIVE WEB SITE TEMPLATE BY TEMPLATED</p>
+            <h1>Hielo</h1>
         </div>
         <div class="slider__item">
-            <h1>2</h1>
+            <p>LOREM IPSUM DOLOR SIT AMET NULLAM FEUGIAT</p>
+            <h1>Magna etiam</h1>
         </div>
         <div class="slider__item">
-            <h1>3</h1>
+            <p>SED CURSUS ALIUAM VEROEROS LOREM IPSUM NULLAM</p>
+            <h1>Tempus dolor</h1>
         </div>
         <div class="slider__item">
-            <h1>4</h1>
+            <p>ADIPISCING LOREM IPSUM FEUGIAT SED PHASELLUS</p>
+            <h1>Etiam feugiat</h1>
         </div>
         <div class="slider__item">
-            <h1>5</h1>
+            <p>QUAS NESCIUNT VEL LABORIOSAM MAGNI ARCHITECTO PERFERENDIS QUO</p>
+            <h1>Ratione</h1>
         </div>
     </div>
 
-
-    <script>
-        const SHOWING_CLASS = "showing";
-        const firstSlide = document.querySelector(".slider__item:first-child");
-        function slide() {
-            const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
-            if(currentSlide) {
-                currentSlide.classList.remove(SHOWING_CLASS);
-                const nextSlide = currentSlide.nextElementSibling;
-                if(nextSlide) {
-                    nextSlide.classList.add(SHOWING_CLASS);
-                } else {
-                    firstSlide.classList.add(SHOWING_CLASS);
-                }
-            } else {
-                firstSlide.classList.add(SHOWING_CLASS);
-            }
-        }
-        slide();
-        setInterval(slide, 2000);
-
-    </script>
+    <script src="js/slider.js"></script>
 
 </body>
 </html>
